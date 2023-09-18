@@ -1,10 +1,8 @@
 # Default is "World"
 # Author Omer Aykan
 
-require 'greeter'
+puts "What's your name"
+my_name = gets.strip
 
-# Default is World
-name = ARGV.first || "World"
-
-greeter = Greeter.new(name)
+puts "Hello, #{my_name}!"
 puts greeter.greet
